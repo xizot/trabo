@@ -3,13 +3,14 @@ interface SubTitleProps {
   text: string;
   center?: boolean;
   width?: string;
+  classes?: string;
 }
-function SubTitle({ text, center, width = "auto" }: SubTitleProps) {
+function SubTitle({ text, center, classes = "" }: SubTitleProps) {
   return (
     <p
       className={`text-[#777781] ${
         center ? "text-center mx-auto" : ""
-      } w-[${width}]`}
+      } ${classes}`}
     >
       {text}
     </p>
