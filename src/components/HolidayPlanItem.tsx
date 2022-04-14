@@ -37,13 +37,13 @@ function HolidayPlanItem({
           <p className='text-mainColor font-semibold text-[1.75rem]'>
             {price}$
           </p>
-          <div>
+          <div className='flex items-center'>
             <img
               src='/assets/images/star.png'
               alt='star'
-              className='w-[18px] h-[18px]'
+              className='w-[18px] h-[18px] mr-[10px]'
             />
-            <span className='block text-[#777781] text-[1.375rem]'>
+            <span className='block  text-[#777781] text-[1.375rem]'>
               {totalStar}
             </span>
           </div>

@@ -8,11 +8,10 @@ function SpecialOffer() {
   return (
     <div className='py-10'>
       <div className='container'>
-        <Title text='Special offers & Discounts' center />
+        <Title text='Special offers & Discounts' classes='text-center' />
         <SubTitle
           text='Travel by water often provided more commfort and speed than land-travel.'
-          center
-          classes='w-[480px]'
+          classes='w-[480px] text-center mx-auto'
         />
         <div className='grid grid-cols-4 gap-[35px] mt-[60px] mb-[50px]'>
           <SpecialOfferItem

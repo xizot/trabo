@@ -1,17 +1,11 @@
 import React from "react";
 interface TitleProps {
   text: string;
-  center?: boolean;
+  classes?: string;
 }
-function Title({ text, center }: TitleProps) {
+function Title({ text, classes }: TitleProps) {
   return (
-    <h3
-      className={`text-[2.75rem] font-bold mb-[14px] ${
-        center ? "text-center" : ""
-      }`}
-    >
-      {text}
-    </h3>
+    <h3 className={`${classes} text-[2.75rem] font-bold mb-[14px] `}>{text}</h3>
   );
 }
 
